@@ -8,8 +8,6 @@ def key_for_min_value(name_hash)
   lowest = value_array.sort.first
 
   name_hash.each do |key, value|
-    if value == lowest
-      return key
-    end
+    return key if value == lowest
   end
 end
